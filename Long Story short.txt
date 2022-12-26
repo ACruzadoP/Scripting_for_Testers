@@ -1,0 +1,6 @@
+At the time of completing this course, I had Python 3.10.4 already installed in the PC. However, I decided to install 3.11.1 - as it's always good to use the most updated version of this stuff. 
+
+IMPORTANT: Make sure the latest version is the one working, as "python --version" is still retrieving the older version.
+
+I may need to manually remove the older version from here: 
+C:\Users\ACRUZADO\AppData\Local\Programs\Python 
