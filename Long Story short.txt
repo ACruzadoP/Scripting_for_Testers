@@ -4,3 +4,19 @@ IMPORTANT: Make sure the latest version is the one working, as "python --version
 
 I may need to manually remove the older version from here: 
 C:\Users\ACRUZADO\AppData\Local\Programs\Python 
+
+
+------
+8/01/2023
+
+As a side note, and before I do anything to the PC I work with, let's prepare my old MacBook so that I can do the courses in both, the laptop that I was provided with by Unit4 and the one I own. 
+Step 1 - Repository locally copied. 
+Step 2 - Visual Studio Code successfully installed.
+Step 3 - Downloaded Python 3.11.1
+    *On Mac, I had to use "python3 --version". For some reason, it was Phython3 the one that was installed.
+ 
+
+ With all already set, let's jump into the course...
+
+
+ 
