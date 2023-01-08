@@ -18,5 +18,5 @@ Step 3 - Downloaded Python 3.11.1
 
  With all already set, let's jump into the course...
 
-
- 
+Btw! Appartenly, I was unable to do a "git push" from Terminal. I had to do it from Visual Studio Code. I even tried using a token instead of the standalone Password...
+let's try again. 
