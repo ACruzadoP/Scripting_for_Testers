@@ -1,0 +1,20 @@
+In this video, the instructor is giving an introduction about how we could include Google Charts in our python script for automatically generating a presentation chart. 
+
+First, we are asked to head to this website:
+https://developers.google.com/chart/interactive/docs/basic_load_libs
+
+    the script has to be included in the "head" 
+
+
+Then, we gotta go to:
+https://developers.google.com/chart/interactive/docs/datatables_dataviews#arraytodatatable
+
+    we have to copy the 1st example and paste it into a function in the "head", but right after the previous script
+    also, keep in mind that the content should be modified for "$labels and $data"
+
+
+Finally, we gotta go to:
+https://developers.google.com/chart/interactive/docs/basic_draw_chart
+
+    here we have to copy the 1st part that says "Instantiate and draw our chart" - with little mofidification, we will be able to paste it at the end of the function we created before.
+    then, we have to copy the 2nd part and paste it in the "body"
