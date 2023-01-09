@@ -1,1 +1,13 @@
-Testing the nesting folders...
+Testing the nesting folders... apparently, when in a folder there's a sub-folder and nothing else, the Explorer of Visual Studio Code doesn't show it. It's shown above the text field but that's it. 
+Interesting...
+
+
+
+With that said, let's get started. 
+
+In this part of the course we will check how analyzing the data gathered from a Perfomance test. This data is available in a CSV file called "TestTimingData.csv"
+    - which is basically the same thing as an Excel file, but with different format. According to wikipedia, CSV stands for "comma-separated values"
+    - so file is a delimited text file that uses a comma to separate values. Long story short: 1 column, several rows. 
+We use CSV because python provides us with a tool (that needs to be imported) to work with it. 
+
+As a side note, the script will be called "readInData.py"
