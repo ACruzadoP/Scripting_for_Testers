@@ -1,3 +1,34 @@
 In the last example, I tried with a website (JSONPlaceholder.com) for which we didn't need to enter any credentials. 
 
 We will try now with another one for which we need to pass through an Authentication process... Cool! ^^
+
+However, before doing that, we need to keep in mind that right now I work from the PC and this one doesn't have the same configuration we had before. So let's start with the basic stuff:
+
+"python -m pip install requests"
+"cls"
+"python"
+"import requests"
+
+next, we will add the url where the Authentication seems to be a requirement:
+
+"url = 'https://api.github.com/user'"
+"response = requests.get(url)"
+"response.json()"
+
+at this point, it's clear that the API is requesting us to pass through the Authentication process.
+
+"response = requests.get(url,auth=('djw-test','password1'))"
+"response.json()"
+
+apparently, that user is no longer accessible and I won't enter my credentials for obvious reasons... so I guess we will have to trust that it will work. 
+At this point, the instructor says that entering your password in plain text is not a good idea and that it would be better to enter a token instead. 
+Then he goes to Github > Personal settings > Developer settings > Personal access tokens > Generate new token
+    - checking "user" and everything that belongs to it. 
+
+Once we have copied the token, we have to include it in our script as follow:
+
+"response = requests.get(url,headers={'Authorization':'Bearer ñlkajsdfkjawefkasdñklfjasdf'})
+    *being "ñlkajsdfkjawefkasdñklfjasdf" the token we just copied. 
+"response.json()"
+
+There are other ways of not using your password, but they are a bit more complex it seems. 
