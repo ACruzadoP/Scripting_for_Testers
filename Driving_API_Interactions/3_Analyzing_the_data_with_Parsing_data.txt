@@ -1,0 +1,11 @@
+From now on, we will no longer use "response.json()" as it is. 
+
+Instead, we will assign the json to a variable that will serve as a dictionary - btw, dictionary and json are the same thing. 
+
+"my_json = response.json()"
+"for key in my_json.keys():"
+"print(key)"
+
+this will print all the keys. If we want the value of a certain key, we will have to go with:
+
+"my_json['name_of_the_key']"
