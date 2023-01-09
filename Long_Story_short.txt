@@ -24,3 +24,10 @@ With all set, let's jump into the course...
 Btw! Appartenly, I was unable to do a "git push" from Terminal. I had to do it from Visual Studio Code. I even tried using a token instead of the standalone Password...
 let's try again. 
 - and... it worked! Somehow, Visual Studio Code did the proper Authentication-related configuration on my behalf. Thanks Code! =)
+
+
+------
+9/01/2023
+
+Back to the PC, I was still experiencing the problem with Python not showing the correct version. I tried many things and the only one that worked was deleting all of them and re-installing from scratches. 
+W/ that said, let's go back to the course! ^^
