@@ -31,3 +31,9 @@ let's try again.
 
 Back to the PC, I was still experiencing the problem with Python not showing the correct version. I tried many things and the only one that worked was deleting all of them and re-installing from scratches. 
 W/ that said, let's go back to the course! ^^
+
+btw! I noticed that, when trying to modify a file that was initially created from my MacBook, I get the following warning msg: "warning: LF will be replace by CRLF in..."
+I don't know what occurs when doing the opposite thing, but this warning seems to be easily disabled by using the following command:
+"git config --global core.autocrlf true" - Actually not, the warning may never go away and True was the default configuration that should remain. 
+If I work using the MacBook, I may need to set it to "input" as follow:
+"git config --global core.autocrlf input"
