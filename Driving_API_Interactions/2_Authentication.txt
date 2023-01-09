@@ -32,7 +32,3 @@ Once we have copied the token, we have to include it in our script as follow:
 "response.json()"
 
 There are other ways of not using your password, but they are a bit more complex it seems. 
-
-
-
-OFF TOPIC: Testing one thing related to a warning I was getting. Check the file "Long_Story_short.txt" for additional info about this warning msg...
