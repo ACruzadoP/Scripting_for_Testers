@@ -1,3 +1,6 @@
+------
+26/12/2022
+
 At the time of completing this course, I had Python 3.10.4 already installed in the PC. However, I decided to install 3.11.1 - as it's always good to use the most updated version of this stuff. 
 
 IMPORTANT: Make sure the latest version is the one working, as "python --version" is still retrieving the older version.
@@ -9,14 +12,14 @@ C:\Users\ACRUZADO\AppData\Local\Programs\Python
 ------
 8/01/2023
 
-As a side note, and before I do anything to the PC I work with, let's prepare my old MacBook so that I can do the courses in both, the laptop that I was provided with by Unit4 and the one I own. 
+As a side note, and before I do anything to the PC I work with, let's prepare my old MacBook so that I can do the courses in both, the laptop (that Unit4 provided me with) and the one I own. 
 Step 1 - Repository locally copied. 
 Step 2 - Visual Studio Code successfully installed.
 Step 3 - Downloaded Python 3.11.1
     *On Mac, I had to use "python3 --version". For some reason, it was Phython3 the one that was installed.
  
 
- With all already set, let's jump into the course...
+With all set, let's jump into the course...
 
 Btw! Appartenly, I was unable to do a "git push" from Terminal. I had to do it from Visual Studio Code. I even tried using a token instead of the standalone Password...
 let's try again. 
