@@ -1,0 +1,20 @@
+1st thing to do: Installing the Python Selenium package. To do so:
+
+    python -m pip install Selenium
+
+
+Apparently, and this is something I found online: in order to know the Selenium version, go with:
+
+    pip show Selenium
+
+
+2nd thing to do: Go to the Selenium phyton documentation > 1.5. Drivers
+
+    https://selenium-python.readthedocs.io/installation.html#drivers
+
+    download and install the Drivers for the browser that you will use. To be honest, the LinkedIn course doesn't give much info about how to properly install this. So feel free to check out the following Youtube video that I found:
+
+        https://www.youtube.com/watch?v=dz59GsdvUF8
+
+
+Once installed, we gotta create a file: "SeleniumExample.py"
