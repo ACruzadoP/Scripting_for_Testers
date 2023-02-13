@@ -1,0 +1,19 @@
+As always the website, that the trainer uses for testing, doesn't exist anymore. So let's try to write down everything I learn without the proper practicing...
+
+To be honest, Unit4 could have completed these courses before recommending them to the workers, as they would have noticed that they are extremely outdated, but never mind! >_<
+
+1st Interesting thing
+------------------------
+    - When looking at a component that repeats over a website, you can inspect it and find its type of tag. (e.g., "b")
+        so you would go with...
+
+
+        b_tags = driver.find_elements("TAG_NAME", 'b')
+        price_list = []
+        for b in b_tags:
+            price_list.append(b.text)
+
+        print (price_list)
+
+
+
