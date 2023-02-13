@@ -12,9 +12,86 @@ Apparently, and this is something I found online: in order to know the Selenium 
 
     https://selenium-python.readthedocs.io/installation.html#drivers
 
-    download and install the Drivers for the browser that you will use. To be honest, the LinkedIn course doesn't give much info about how to properly install this. So feel free to check out the following Youtube video that I found:
+    download and install the Drivers for the browser that you will use. To be honest, the LinkedIn course doesn't give much info about how to properly install this. 
+    So feel free to check out the following Youtube video that I found:
 
         https://www.youtube.com/watch?v=dz59GsdvUF8
 
 
+
+
+
 Once installed, we gotta create a file: "SeleniumExample.py"
+########################################################
+
+
+########################################################
+UPDATE_Problem_1: I run into a problem of not having compatible versions, so I had to install a specific version of Chromedriver that would match with the Chrome version. 
+To do this: I'm not sure which thing is the one that worked, but I tried with the following:
+- Downloading the correct version from here: https://chromedriver.chromium.org/downloads
+- Manually delete all the versions that I had in Local Disck (C:)
+- Run "chromedriver -v" so that the following would be retrieved: 
+    Could not create process with command '"C:\Users\ACRUZADO\scoop\apps\chromedriver\current\chromedriver.exe"   -v'.
+
+- Place the new version into the same folder. 
+- Install with pip by using the following command: 
+    pip install chromedriver-py==88.0.4324.96 (source: https://pypi.org/project/chromedriver-py/)
+     but with the version 110.0.5481.77, retrieved from here: https://pypi.org/project/chromedriver-py/#history
+- Verify that the correct version was installed by using "chromedriver -v" one more time. 
+########################################################
+
+
+
+########################################################
+UPDATE_Problem_2: The following was being retrieved: 'WebDriver' object has no attribute 'find_element_by_name'
+- The fix was easy... apparently, that method was removed in Selenium 4.3.0
+- Source: https://github.com/SeleniumHQ/selenium/blob/a4995e2c096239b42c373f26498a6c9bb4f2b3e7/py/CHANGES
+- Instead of that one, had to use: 
+    driver.find_element("name", "q")
+########################################################
+
+
+
+########################################################
+UPDATE_Problem_3: The popup to accept the Google cookies was getting in the middle.
+So I added the following:
+
+from selenium.webdriver.common.action_chains import ActionChains
+ActionChains(driver).key_down(Keys.TAB).key_up(Keys.TAB).perform()
+ActionChains(driver).key_down(Keys.TAB).key_up(Keys.TAB).perform()
+ActionChains(driver).key_down(Keys.TAB).key_up(Keys.TAB).perform()
+ActionChains(driver).key_down(Keys.TAB).key_up(Keys.TAB).perform()
+ActionChains(driver).key_down(Keys.ENTER).key_up(Keys.ENTER).perform()
+########################################################
+
+
+########################################################
+UPDATE_Problem_4: The browser was being automatically closed afterwards.
+So I replaced this:
+
+driver = webdriver.Chrome()
+
+    by this:
+
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("detach", True)
+    driver = webdriver.Chrome(options=options)
+########################################################
+
+
+########################################################
+UPDATE_Problem_5: Due to the previous issues, I had to find a way to debug...
+    - First, I started using sleeps. To do so:
+
+        import time 
+        time.sleep(1)
+        #this will add 1 second of sleep
+
+
+    - Second, I printed some messages in the console by using
+
+        print("Whatever")
+########################################################
+
+
+

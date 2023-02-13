@@ -1,0 +1,33 @@
+In this part of the course, we learn how to identify the different elements on the web to be tested.
+- Right click > Inspect > check the html
+    - The class or the ID are good parameteres to identify, but they're not always available and/or good indicators.
+- We we don't find a good identifier, right click on the HTML tag > Copy > Copy XPath. 
+
+Now we run into the 1st issue. find_element_by_xpath is no longer used. Instead, we gotta use -> 
+
+    driver.find_element("xpath", '')
+
+
+Apparently, the website used in the Example doesn't work anymore. I used another one and clicked on the Search button. 
+
+
+
+Another cool thing to do is to go back in the browser, to the previous site by writting the following:
+    driver.back()
+
+
+Stuff to consider:
+    1. If we try clicking a button that's contanied within an "iframe", we gotta switch to it. To do so:
+
+        import time
+        time.sleep(1)
+        driver.switch_to.frame('...') // being ... the name of the frame
+
+
+        2. Now that we are switched into the iframe. We can grab one of the links. To do so:
+
+            link_elements = driver.find_elements("TAG_NAME", 'a')
+            print(link_elements[0].get_attribute('href'))
+
+
+        *I don't know if this works as I don't have a website to try it on. 
