@@ -1,0 +1,24 @@
+In this section of the course, we are being provided with lots of information that I don't think I need. However, I found something pretty cool and it was a function to log into a website. 
+
+def login(driver):
+	user_name = driver.find_element_by_id('txtUsername')
+	pwd = driver.find_element_by_id('txtPassword')
+
+	user_name.send_keys('Admin')
+	pwd.send_keys('admin')
+
+	login_button = driver.find_element_by_id('btnLogin').click()
+
+
+
+login(driver)
+
+
+
+As always, bear in mind that the course is outdated and some functions were deprecated every since. 
+
+
+also.. for shortcuts we could use something like this:
+
+send_keys(Keys.CONTROL + "a")
+= select all*
